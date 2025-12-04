@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../common/_base_styles.css">
+  <title>Invoice 2</title>
+</head>
+<body>
+  {% include 'common/_header.html' %}
+  <h2>Invoice #{{invoiceId}} (Detailed)</h2>
+  <table>
+    <tr><th>Item</th><th>Amount</th></tr>
+    {% for item in items %}
+    <tr><td>{{item.name}}</td><td>${{item.amount}}</td></tr>
+    {% endfor %}
+  </table>
+  {% include 'common/_footer.html' %}
+</body>
+</html>
