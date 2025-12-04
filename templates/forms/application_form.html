@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../common/_base_styles.css">
+  <title>Application Form</title>
+</head>
+<body>
+  {% include 'common/_header.html' %}
+  <form>
+    <label>Name: <input type="text" value="{{studentName}}"></label><br>
+    <label>Email: <input type="email" value="{{email}}"></label><br>
+    <button type="submit">Submit</button>
+  </form>
+  {% include 'common/_footer.html' %}
+</body>
+</html>
