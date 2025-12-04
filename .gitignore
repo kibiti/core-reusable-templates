@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+output/*.pdf
+.DS_Store
+node_modules/
+.env
