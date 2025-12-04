@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elimuhub Education Consultants - Upfront Payment Invoice</title>
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f7f9fc;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+    .invoice {
+        max-width: 850px;
+        margin: auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    .header {
+        background: linear-gradient(135deg, #0056b3, #003d80);
+        color: #fff;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background: #fff;
+        margin-right: 20px;
+    }
+    .header h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .company-details {
+        text-align: right;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .invoice-body {
+        padding: 40px;
+    }
+    .invoice-title {
+        font-size: 20px;
+        color: #003d80;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .client-info {
+        background: #f1f5f9;
+        padding: 20px;
+        border-left: 4px solid #0056b3;
+        margin-bottom: 30px;
+    }
+    .client-info strong {
+        font-size: 16px;
+        color: #222;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+    th, td {
+        border-bottom: 1px solid #eaeaea;
+        padding: 12px 8px;
+        text-align: left;
+        font-size: 14px;
+    }
+    th {
+        background: #003d80;
+        color: #fff;
+    }
+    .amount {
+        text-align: right;
+        font-weight: bold;
+        color: #0056b3;
+    }
+    .total-section {
+        background: #f8fafc;
+        border-left: 4px solid #0056b3;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .total-section table {
+        width: 100%;
+    }
+    .total-section td {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .total-label {
+        text-align: left;
+        color: #444;
+    }
+    .total-value {
+        text-align: right;
+        font-weight: bold;
+        color: #e63946;
+    }
+    .notes {
+        background: #fff4e6;
+        border-left: 4px solid #f39c12;
+        padding: 20px;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #555;
+    }
+    .payment-info {
+        background: #e8f5e9;
+        border-left: 4px solid #27ae60;
+        padding: 25px;
+        margin-top: 30px;
+        font-size: 1px;
+    }
+    .payment-info h3 {
+        color: #2e7d32;
+        margin-bottom: 10px;
+    }
+    .signature {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+    }
+    .signature div {
+        text-align: center;
+        flex: 1;
+    }
+    .signature-line {
+        border-bottom: 2px solid #333;
+        margin: 40px auto 10px auto;
+        width: 180px;
+    }
+    .footer {
+        background: #003d80;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        font-size: 13px;
+    }
+</style>
+</head>
+<body>
+
+<div class="invoice">
+    <div class="header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/SxkWvdR9/elimuhub-logo.png" alt="Elimuhub Logo">
+            <h1>ELIMUHUB EDUCATION CONSULTANTS</h1>
+        </div>
+        <div class="company-details">
+            P.O BOX 10765-00100, Nairobi<br>
+            +254 731 838 387 | elimuhubconsultant@gmail.com<br>
+            <a href="https://elimuhub.simdif.com" style="color:#fff;">www.elimuhub.simdif.com</a>
+        </div>
+    </div>
+
+    <div class="invoice-body">
+        <div class="invoice-title">INVOICE: WEEK 3 PAYMENT REQUEST</div>
+
+        <div class="client-info">
+            <strong>BILL TO:</strong><br>
+            Client Name: Ann<br>
+            Client Address: South B<br>
+            Client Contact: +254 712 022988<br>
+            Date Due: 21/11/2025</br>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Sessions</th>
+                    <th>Rate (KSh)</th>
+                    <th>Amount (KSh)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Week 3 Tuition (2 hrs/day, Mon–Thur)</td>
+                    <td>4</td>
+                    <td>1,200</td>
+                    <td class="amount">6,000</td>
+                </tr>
+                <tr>
+                    <td>Credit (Deductible from First Week)</td>
+                    <td>–</td>
+                    <td>–</td>
+                    <td class="amount">1,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <table>
+                <tr>
+                    <td class="total-label">Subtotal:</td>
+                    <td class="total-value">KSh 6,000</td>
+                </tr>
+                <tr>
+                    <td class="total-label">Deductible credit:</td>
+                    <td class="total-value">1,000</td>
+                </tr>
+                <tr>
+                    <td class="total-label"><strong>Total Due:</strong></td>
+                    <td class="total-value"><strong>KSh 5,000</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="notes">
+            <p><strong>Note:</strong> The first tutoring session has been successfully completed. Kindly make the first week’s upfront payment to continue and confirm your schedule. This payment secures your tutor and allows continuation of sessions without interruption.</p>
+        </div>
+
+        <div class="payment-info">
+            <h3>Payment Details</h3>
+            <p><strong>Airtel Money:</strong> 0731 838387 (James Kibiti)</p>
+            <p><strong>Payment Schedule:</strong> Weekly, every Friday</p>
+            <p><strong>Reference:</strong> Ann - Week 3</p>
+            <p><strong>Important:</strong> All payments must be made directly to Elimuhub’s official account. Do not pay tutors directly.</p>
+        </div>
+
+       <div class="signature">
+    <div>
+        <img src="https://i.postimg.cc/15SWvMkM/Kibiti-sign-2.png" alt="Authorized Signature" width="160">
+        <p>Authorized Signature<br><strong>Hassan Kibiti</strong></p>
+    </div>
+    <div>
+        <img src="https://i.postimg.cc/vTYVV1K7/stamp-1.jpg" alt="Elimuhub Stamp" width="110">
+        <p><strong>Official Company Stamp</strong></p>
+    </div>
+    <div>
+        <div class="signature-line"></div>
+        <p><strong>Date:</strong> <span id="invoice-date"></span></p>
+    </div>
+</div>
+
+<script>
+    // Format: DD/MM/YYYY
+    const today = new Date();
+    const formattedDate = today.getDate().toString().padStart(2, '0') + '/' +
+                          (today.getMonth() + 1).toString().padStart(2, '0') + '/' +
+                          today.getFullYear();
+    document.getElementById("invoice-date").textContent = formattedDate;
+</script>
+
+    <div class="footer">
+        Thank you for choosing <strong>Elimuhub Education Consultants</strong>.<br>
+        For inquiries, contact us at elimuhubconsultant@gmail.com or call 0731 838 387.
+    </div>
+</div>
+
+</body>
+</html>
