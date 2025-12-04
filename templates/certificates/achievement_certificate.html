@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../common/_base_styles.css">
+  <title>Achievement Certificate</title>
+</head>
+<body>
+  {% include 'common/_header.html' %}
+  <div class="certificate">
+    <h1>Achievement Certificate</h1>
+    <p>Awarded to {{studentName}} for {{achievement}} on {{date}}.</p>
+    <img src="../../static/images/watermark.png" alt="Watermark">
+  </div>
+  {% include 'common/_footer.html' %}
+</body>
+</html>
