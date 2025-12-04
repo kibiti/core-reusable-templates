@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../common/_base_styles.css">
+  <title>Feedback Form</title>
+</head>
+<body>
+  {% include 'common/_header.html' %}
+  <form>
+    <label>Feedback: <textarea>{{feedback}}</textarea></label><br>
+    <button type="submit">Submit</button>
+  </form>
+  {% include 'common/_footer.html' %}
+</body>
+</html>
